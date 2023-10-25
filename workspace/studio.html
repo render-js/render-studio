@@ -1,0 +1,25 @@
+<template>
+    <view>
+        <div @ref="h" class="trace"></div>
+        <div>
+            <input type="text" @ref="content" style="margin: 0 auto;display: inline-block;width: 200px;">
+            <button type="button" @on:click="send">send</button>
+        </div>
+        <div class="kk">
+            <div style="height: 60px;width: 50px;position: relative;left: 50px;color: black;z-index: 10;"></div>
+        </div>
+    </view>
+    <style theme="default">
+        div.trace[cpn=studio]{
+            width: 1200px;
+            height: 450px;
+            margin: 0 auto;
+            border: solid 1px black;
+            overflow: hidden;
+        }
+        div.kk[cpn=studio]{
+            width: 100px;
+            height: 60px;
+        }
+    </style>
+</template>
