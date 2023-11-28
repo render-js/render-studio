@@ -4,24 +4,17 @@
   "description": "The studio for renderJs",
   "main": "index.js",
   "scripts": {
-    "studio": "webpack-dev-server --progress --open --port 9090"
+    "studio": "webpack-dev-server --config webpack/webpack.config.js --progress --open --port 7070"
   },
-  "keywords": [
-    "render-studio"
-  ],
-  "author": "mutian",
   "license": "MIT",
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "glob": "^10.3.10",
     "html-webpack-plugin": "^5.5.3",
     "raw-loader": "^4.0.2",
-    "render-core": "^1.3.5",
+    "render-core": "1.3.12",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
-    "render-barrage": "1.0.22"
   }
 }

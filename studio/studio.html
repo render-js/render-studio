@@ -2,7 +2,9 @@
     <view>
         <div @ref="h" class="trace"></div>
         <div>
-            <input type="text" @ref="content" style="margin: 0 auto;display: inline-block;width: 200px;">
+            <label>
+                <input type="text" @ref="content" style="margin: 0 auto;display: inline-block;width: 200px;">
+            </label>
             <button type="button" @on:click="send">send</button>
         </div>
         <div class="kk">

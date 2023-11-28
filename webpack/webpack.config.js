@@ -1,8 +1,7 @@
-const {getTemplateArray} = require("./init/init");
-const CopyPlugin = require("copy-webpack-plugin");
+const {getTemplateArray} = require("./webpack-init");
 
 module.exports = {
-    entry: __dirname+"/runtime/main.js",
+    entry: __dirname+"/.."+"/main.js",
     output:{
         path:__dirname+"/dist",
         filename:'script/[name].js'
@@ -19,7 +18,7 @@ module.exports = {
     plugins:getTemplateArray("public/**/*.html"),
     devServer: {
         compress: true,
-        port: 9090
+        port: 7070
     },
     watchOptions: {
         aggregateTimeout: 200,
