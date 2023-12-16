@@ -1,11 +1,26 @@
 <template>
     <view>
         <h1>Hello world</h1>
-        <button type="button" @on:click="raw_show">click me</button>
-        <button type="button" @on:click="tk">click me</button>
-        <video controls>
-            <source src="http://localhost/video">
-        </video>
+        <div @txt="ok" @bind:style="hello"></div>
+        <div @document="person">
+            <h1 @section="name"></h1>
+        </div>
+        <table @document="table">
+            <thead>
+                <tr>
+                    <th @document-list="header">
+                        <span @data></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr @document-list="rows">
+                    <td @list-list>
+                        <span @data></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </view>
     <style theme="default">
         div.trace[cpn=studio]{
@@ -18,11 +33,6 @@
         div.kk[cpn=studio]{
             width: 100px;
             height: 60px;
-        }
-    </style>
-    <style theme="show">
-        h1[cpn=studio]{
-            color: red;
         }
     </style>
 </template>
