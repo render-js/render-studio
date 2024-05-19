@@ -23,7 +23,12 @@ export default new Component({
                 ["mutian",24,"female"],
                 ["huangting",24,"female"]
             ]
-        }
+        },
+        haha:[
+            ["liuzhang",23,"male"],
+            ["mutian",24,"female"],
+            ["huangting",24,"female"]
+        ]
     },
     mode: "box"
 })

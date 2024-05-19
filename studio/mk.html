@@ -1,0 +1,38 @@
+<template>
+    <view>
+        yes
+        <h1>mutian</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr @for="haode">
+                    <td @for-document @section="name"></td>
+                    <td @for-document @section="age"></td>
+                    <td @for-document @section="sex"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" @on:click="change">click me</button>
+        <ul @map="test">
+            <h1 @section="name"></h1>
+            <li @map-list="friends" @data></li>
+            <li @map-document="tk" @section="h"></li>
+        </ul>
+    </view>
+    <style theme="default">
+        h1[cpn=mk]{
+            color: rebeccapurple;
+        }
+    </style>
+    <style theme="ok">
+        h1[cpn=mk]{
+            color: red;
+        }
+    </style>
+</template>

@@ -3,7 +3,7 @@ const {getTemplateArray} = require("./webpack-init");
 module.exports = {
     entry: __dirname+"/.."+"/main.js",
     output:{
-        path:__dirname+"/dist",
+        path:__dirname+"/../dist",
         filename:'script/[name].js'
     },
     mode: 'development',
@@ -11,6 +11,10 @@ module.exports = {
         rules: [
             {
                 test: /\.html$/i,
+                use: 'raw-loader',
+            },
+            {
+                test: /\.css$/i,
                 use: 'raw-loader',
             }
         ]
